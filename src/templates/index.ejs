@@ -1,0 +1,16 @@
+<h1 class="title"> Intentional Habit Tracker</h1>
+
+<p>If you want to experience progress toward your goal, you need to be <b>intentional</b> about the work you’re doing
+  every day.</p>
+
+
+
+
+
+<% if ( auth.isAnonymous ) { %>
+<p><a href="/login">Click here</a> to login or create an account.</p>
+<% } %>
+
+<% if ( auth.isAuthenticated ) { %>
+<p><a href="/add">Add</a> a measurement or <a href="/list">view</a> your progress.</p>
+<% } %>
